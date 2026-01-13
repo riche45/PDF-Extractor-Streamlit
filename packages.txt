@@ -1,0 +1,7 @@
+# Dependencias del sistema para Streamlit Cloud
+# Necesario para camelot-py y procesamiento de PDFs
+
+ghostscript
+python3-tk
+libopencv-dev
+

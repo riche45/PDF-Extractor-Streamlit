@@ -100,14 +100,27 @@ st.markdown("""
     /* Ocultar el botón "Deploy" y "GitHub" */
     [data-testid="stToolbar"] {display: none;}
     
-    /* Ocultar badge de perfil del creador (esquina inferior derecha) */
-    [data-testid="stCommunityCloudStatusOverlay"] {display: none;}
-    .stCommunityCloudStatusOverlay {display: none;}
-    .viewerBadge_link__qRIco {display: none;}
-    .viewerBadge_container__r5tak {display: none;}
+    /* Ocultar badge de perfil del creador (esquina inferior derecha) - FORZADO */
+    [data-testid="stCommunityCloudStatusOverlay"] {display: none !important;}
+    .stCommunityCloudStatusOverlay {display: none !important;}
+    .viewerBadge_link__qRIco {display: none !important;}
+    .viewerBadge_container__r5tak {display: none !important;}
+    .viewerBadge_container__1QSob {display: none !important;}
     
     /* Ocultar cualquier elemento de perfil/usuario */
-    iframe[title*="Streamlit Community Cloud"] {display: none;}
+    iframe[title*="Streamlit Community Cloud"] {display: none !important;}
+    iframe[title*="streamlit_community_cloud"] {display: none !important;}
+    
+    /* Ocultar todos los badges y overlays posibles */
+    div[class*="viewerBadge"] {display: none !important;}
+    div[class*="ViewerBadge"] {display: none !important;}
+    div[data-testid*="badge"] {display: none !important;}
+    
+    /* Ocultar elementos flotantes en esquinas */
+    div[style*="position: fixed"][style*="bottom"][style*="right"] {display: none !important;}
+    
+    /* Selector más específico para el badge de Community Cloud */
+    .main > div[style*="position: fixed"] {display: none !important;}
     
     /* Estilo profesional sin marca de Streamlit */
     .block-container {

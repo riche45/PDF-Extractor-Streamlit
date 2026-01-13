@@ -100,6 +100,15 @@ st.markdown("""
     /* Ocultar el botón "Deploy" y "GitHub" */
     [data-testid="stToolbar"] {display: none;}
     
+    /* Ocultar badge de perfil del creador (esquina inferior derecha) */
+    [data-testid="stCommunityCloudStatusOverlay"] {display: none;}
+    .stCommunityCloudStatusOverlay {display: none;}
+    .viewerBadge_link__qRIco {display: none;}
+    .viewerBadge_container__r5tak {display: none;}
+    
+    /* Ocultar cualquier elemento de perfil/usuario */
+    iframe[title*="Streamlit Community Cloud"] {display: none;}
+    
     /* Estilo profesional sin marca de Streamlit */
     .block-container {
         padding-top: 2rem;

@@ -87,6 +87,24 @@ st.markdown("""
         border-radius: 5px;
         margin: 1em 0;
     }
+    
+    /* Ocultar menú de GitHub y elementos no deseados */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    
+    /* Ocultar botón de GitHub en el toolbar */
+    .viewerBadge_container__1QSob {display: none;}
+    button[kind="header"] {display: none;}
+    
+    /* Ocultar el botón "Deploy" y "GitHub" */
+    [data-testid="stToolbar"] {display: none;}
+    
+    /* Estilo profesional sin marca de Streamlit */
+    .block-container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 </style>
 """, unsafe_allow_html=True)
 

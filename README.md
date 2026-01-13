@@ -1,6 +1,12 @@
-# 📊 Extractor de Datos PDF
+# 📊 PDF Extractor - Streamlit
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.52%2B-FF4B4B.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-Private-red.svg)]()
 
 Sistema moderno para extracción automática de datos desde documentos PDF con interfaz web profesional. Convierte PDFs complejos en datos estructurados listos para análisis.
+
+🔗 **Repositorio**: [https://github.com/riche45/PDF-Extractor-Streamlit](https://github.com/riche45/PDF-Extractor-Streamlit)
 
 ## ✨ Características Principales
 
@@ -12,8 +18,6 @@ Sistema moderno para extracción automática de datos desde documentos PDF con i
 - 🔍 **Vista Previa**: Revisa datos antes de descargar
 - 📈 **Estadísticas en Tiempo Real**: Métricas de procesamiento y calidad
 - 🏢 **Especializado en Vida Laboral**: Optimizado para documentos empresariales
-- ☁️ **Modo Híbrido**: Trabaja local O colaborativo con Google Drive/Sheets
-- 👥 **Colaboración en Tiempo Real**: Equipo distribuido accede a mismos datos
 
 ## 🎯 Casos de Uso
 
@@ -22,6 +26,15 @@ Sistema moderno para extracción automática de datos desde documentos PDF con i
 - 📊 **Business Intelligence**: Convertir PDFs en datos analizables
 - 🔄 **Automatización**: Procesamiento batch de documentos
 
+## 🛠️ Tecnologías
+
+- **Python 3.8+**: Lenguaje principal
+- **Streamlit**: Framework de interfaz web
+- **PyPDF2 / pypdf**: Extracción de texto
+- **tabula-py**: Extracción de tablas
+- **pandas**: Manipulación de datos
+- **openpyxl**: Exportación a Excel
+
 ## 📋 Requisitos
 
 - Python 3.8 o superior
@@ -29,21 +42,41 @@ Sistema moderno para extracción automática de datos desde documentos PDF con i
 
 ## 🚀 Inicio Rápido
 
-### 1. Instalar dependencias
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/riche45/PDF-Extractor-Streamlit.git
+cd PDF-Extractor-Streamlit
+```
+
+### 2. Crear entorno virtual
+
+```bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Instalar dependencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Ejecutar la aplicación
+### 4. Ejecutar la aplicación
 
 ```bash
-streamlit run app.py
+# Usar el Python del entorno virtual
+python -m streamlit run app.py
 ```
 
-### 3. Abrir en navegador
+### 5. Abrir en navegador
 
-Ve a `http://localhost:8501`
+Ve a `http://localhost:8501` 🎉
 
 ## 📖 Cómo Usar
 
@@ -399,7 +432,18 @@ Para problemas o preguntas, revisa los logs en `logs/extraction.log`.
 
 Uso interno del cliente.
 
+## 🤝 Contribuciones
+
+Este es un proyecto privado. Para sugerencias o mejoras, contacta al propietario del repositorio.
+
+## 👨‍💻 Autor
+
+**Richard Garcia**  
+📧 Email: tayrona7@hotmail.com  
+🔗 GitHub: [@riche45](https://github.com/riche45)
+
 ---
 
 **Versión**: 1.0  
-**Última actualización**: Noviembre 2024
+**Última actualización**: Enero 2026  
+**Desarrollado **para Clara Ruiz Company**

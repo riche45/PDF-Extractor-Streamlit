@@ -1,0 +1,20 @@
+# Versión minimalista - Solo lo esencial
+# Usa esto si quieres despliegue más rápido y ligero
+
+# Interfaz de usuario
+streamlit>=1.28.0
+
+# Procesamiento de datos
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# Extracción de PDFs (esenciales)
+pdfplumber>=0.10.0
+PyPDF2>=3.0.0
+
+# Visualización
+matplotlib>=3.7.0
+
+# Utilidades
+python-dotenv>=1.0.0

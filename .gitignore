@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Credenciales y secretos (Google y otros)
+credentials.json
+token.json
+service_account.json
+.env
+*.key
+*.pem
+
+# Documentación de Google (mantener local, no subir)
+CONFIGURACION.md
+DESPLIEGUE_PARA_CONTABLES.md
+FLUJO_HIBRIDO.md
+
+# Datos
+data/input/*
+data/output/*
+data/reports/*
+!data/input/.gitkeep
+!data/output/.gitkeep
+!data/reports/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

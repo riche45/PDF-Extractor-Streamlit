@@ -130,66 +130,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# JavaScript para remover elementos del DOM dinámicamente
-st.markdown("""
-<script>
-    // Función para remover el badge de Streamlit
-    function removeBadges() {
-        // Remover por atributos data-testid
-        const testIds = [
-            'stCommunityCloudStatusOverlay',
-            'stToolbar',
-            'stDecoration',
-            'stHeader'
-        ];
-        testIds.forEach(id => {
-            const elements = document.querySelectorAll(`[data-testid="${id}"]`);
-            elements.forEach(el => el.remove());
-        });
-        
-        // Remover por clases parciales
-        const classPatterns = ['viewerBadge', 'ViewerBadge', 'StatusWidget'];
-        classPatterns.forEach(pattern => {
-            const elements = document.querySelectorAll(`[class*="${pattern}"]`);
-            elements.forEach(el => el.remove());
-        });
-        
-        // Remover iframes de Streamlit
-        const iframes = document.querySelectorAll('iframe');
-        iframes.forEach(iframe => {
-            const title = iframe.getAttribute('title') || '';
-            if (title.includes('streamlit') || title.includes('Streamlit')) {
-                iframe.remove();
-            }
-        });
-        
-        // Remover elementos fixed en esquina inferior derecha
-        const allDivs = document.querySelectorAll('div');
-        allDivs.forEach(div => {
-            const style = window.getComputedStyle(div);
-            if (style.position === 'fixed' && 
-                parseInt(style.bottom) < 100 && 
-                parseInt(style.right) < 200) {
-                // Verificar si contiene links o badges
-                if (div.querySelector('a') || div.querySelector('button') || 
-                    div.textContent.includes('Hosted') || div.textContent.includes('View profile')) {
-                    div.remove();
-                }
-            }
-        });
-    }
-    
-    // Ejecutar inmediatamente
-    removeBadges();
-    
-    // Ejecutar cada 500ms para capturar elementos que se cargan dinámicamente
-    setInterval(removeBadges, 500);
-    
-    // Ejecutar cuando el DOM cambie
-    const observer = new MutationObserver(removeBadges);
-    observer.observe(document.body, { childList: true, subtree: true });
-</script>
-""", unsafe_allow_html=True)
+# Nota: JavaScript inline está bloqueado por CSP en Streamlit Cloud
+# Solo usamos CSS para ocultar elementos de branding
 
 
 def main():
